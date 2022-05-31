@@ -1,0 +1,96 @@
+.container,
+.contents,
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.form {
+  flex: 1;
+}
+
+.input {
+  width: 100%;
+  height: 96px;
+  font-size: 1rem;
+}
+
+.container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.icons {
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #1da1f2;
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+}
+
+.contents button {
+  background: #1da1f2;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.image_url_box {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #1da1f2;
+}
+
+.image_url_box input,
+.image_url_box button {
+  background: transparent;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.image_url_box input {
+  flex: 1;
+}
+
+.image_url_box input::placeholder {
+  color: whitesmoke;
+}
+
+.seleted_img {
+  padding: 1rem 0;
+  width: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.seleted_img img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}

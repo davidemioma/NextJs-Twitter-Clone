@@ -1,0 +1,48 @@
+.feed {
+  grid-column: span 7;
+  border-left: 0.5px solid lightgray;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header h1 {
+  font-size: 1.2rem;
+}
+
+.header_icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  color: #1da1f2;
+  transition: all 0.5s ease-out;
+}
+
+.header_icon:hover {
+  transform: rotate(180deg) scale(1.25);
+}
+
+.tweets {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .feed {
+    grid-column: span 5;
+    border-right: 0.5px solid lightgray;
+  }
+}

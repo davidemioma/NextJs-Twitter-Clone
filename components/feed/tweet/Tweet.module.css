@@ -1,0 +1,77 @@
+.container {
+  border-top: 0.5px solid whitesmoke;
+  padding: 1rem;
+}
+
+.header,
+.icons,
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  gap: 0.5rem;
+}
+
+.profile_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.image {
+  width: 100%;
+  margin-top: 0.8rem;
+  padding-left: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.icons {
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.icon {
+  gap: 0.3rem;
+  justify-content: center;
+  cursor: pointer;
+  color: #bfbfbf;
+}
+
+.comments {
+  margin-top: 1rem;
+  border-top: 0.5px solid whitesmoke;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 170px;
+  overflow-y: scroll;
+}
+
+.comment_form {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comment_form input {
+  flex: 1;
+  background: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.comment_form button {
+  background: transparent;
+  color: #1da1f2;
+}
+
+.comment_form .disabled {
+  color: #bfbfbf;
+  cursor: not-allowed;
+}

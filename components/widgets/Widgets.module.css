@@ -1,0 +1,30 @@
+.widgets {
+  padding: 1rem 0;
+  display: none;
+  margin-left: 1rem;
+}
+
+.search {
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search input {
+  flex: 1;
+  background: transparent;
+}
+
+.search input::placeholder {
+  color: #cccccc;
+}
+
+@media screen and (min-width: 1024px) {
+  .widgets {
+    display: block;
+    grid-column: span 2;
+  }
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  max-width: fit-content;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.container p {
+  display: none;
+}
+
+.container:hover {
+  background: #f2f2f2;
+  color: #1da1f2;
+}
+
+@media screen and (min-width: 768px) {
+  .container p {
+    display: block;
+    font-weight: lighter;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container p {
+    font-size: 1.2rem;
+  }
+}
